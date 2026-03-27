@@ -1,4 +1,4 @@
-//Joseph Francisco Pereira: 7, 17, 6, 15
+//Joseph Francisco Pereira: 7, 14, 5, 3, 1
 
 //funcao
 
@@ -9,50 +9,56 @@
 //-----------exercicio7---------//
 function exercicio7() {
 
-    const distancia = Number(prompt("distancia em quilometros"))
-    const converter = Number(prompt("converter para metros e centimetros"))
-    alert("a resposta é:" + distancia + converter) 
- 
+   const numero = Number( prompt("peça um numero"))
+   const numeroanterior = Number( prompt(" numero anterio "))
+   const numerosucessor = Number( prompt("numero sucessor"))
+     const resultado = (numeroanterior + numerosucessor)
+     alert ("o resultado é:" + resultado)
 }
 
 const buttonexercicio7 = document.getElementById("exercicio7")
 buttonexercicio7.addEventListener('click', () => { exercicio7()})
  
-//------------------exercicio6-----------------//
+//------------------exercicio 1-----------------//
 
-function exercicio6() {
- 
-    const total = Number(prompt("digite a duracao em segundos"))
-    const horas = parseInt(total / 3600)
-    const resto = total % 3600
-    const m = parseInt(resto/60)
-    const segundos = resto & 60
-    alert("a resposta é" + horas + m + segundos)
-}
+function exercicio1() {
 
-const buttonexercicio6 = document.getElementById("exercicio6")
-buttonexercicio6.addEventListener('click', () => { exercicio6()})
-
-
-//--------------exercicio15----------//
-
-function exercicio15() {
- 
-const numero1 = Number(prompt("digite o primeiro numero"))
-const numero2 = Number(prompt("digite o segundo numero"))
-if (numero1 > numero2) {
-    alert("o maior numero é:" + numero1)
-} else if (numero2 > numero1) 
-    alert("o maior numero é:" + numero2) 
-else {
-    alert ("os dois numeros são iguais!")
-}
-   
+const numero1 = Number( prompt("digite o primeiro numero"))
+const numero2 = Number( prompt(" digite o segundo numero"))
+const resultado = (numero1 + numero2)
+alert("o resultado è:" + resultado)
 
 }
+    const buttonexercicio1 = document.getElementById("exercicio1")
+buttonexercicio1.addEventListener('click', () => { exercicio1()})
 
-const buttonexercicio15 = document.getElementById("exercicio15")
-buttonexercicio15.addEventListener('click', () => { exercicio15()})
+//---------3----------//
+
+function exercicio3() {
  
+    const pessoa1 = Number(prompt("dogite o peso da rpimeira pessoa"))
+    const pessoa2 = Number(prompt("dogite o peso da segunda pessoa"))
+    const pessoa3 = Number(prompt("dogite o peso da terceira pessoa"))
+    const pessoa4 = Number(prompt("dogite o peso da quarta pessoa"))
+    const pessoa5 = Number(prompt("dogite o peso da quinta pessoa"))
+      const resultado = (pessoa1 + pessoa2 + pessoa3 + pessoa4 + pessoa5)
+    alert (" o resultado é:" + resultado )
+}
+
+const buttonexercicio3 = document.getElementById("exercicio3")
+buttonexercicio3.addEventListener('click', () => { exercicio3()})
 
 
+//----------- exercicio 14 ----------//
+ function exercicio14() {
+
+const horario1 = Number(prompt("bom dia 05:11"))
+const horario2 = Number(prompt("boa tarde 12:17"))
+const horario3 = Number(prompt("boa noite 18:14"))
+     const resultado = ( horario1 + horario2 + horario3)
+   alert ("horarios" + resultado)
+
+
+ }
+    const buttonexercicio14 = document.getElementById("exercicio14")
+buttonexercicio14.addEventListener('click', () => { exercicio14()}) 
